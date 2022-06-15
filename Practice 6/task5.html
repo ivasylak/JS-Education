@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+
+    </head>
+    <body>
+        <h1 id="h1">I'am a big header!!!</h1>
+        <div id="myDiv">
+            <p id="p1">First paragraph</p>
+            <p id="p2">Second paragraph</p>
+            <p id="p3">Third paragraph</p>
+            <p id="p4">Fourth paragraph</p>
+        </div>
+        <ul id="myList">
+            <li>Make</li>
+            <li>me</li>
+            <li>horizontal!</li>
+        </ul>
+
+        <span>Make me invisible, please!</span>
+        <script>
+            document.querySelector("#h1").style.background = "green";
+            document.querySelector("#h1").style.width = "400px";
+
+            document.querySelector("#p1").style.fontWeight = "bold";
+
+            document.querySelector("#p2").style.color = "red";
+
+            document.querySelector("#p3").style.textDecoration = "underline";
+
+            document.querySelector("#p4").style.fontStyle = "italic";
+
+            let myList = document.querySelector("#myList");
+
+            console.log(myList.outerHTML);
+
+            myList.outerHTML = "<p>Makemehorizontal!</p>";
+
+            console.log(myList.outerHTML)
+
+            document.querySelector("span").remove();
+
+        </script> 
+    </body>
+
+</html>
