@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button type="button" id="changeToBlue" onclick="changeToBlue">Click to make the page blue.</button>
+        <button type="button" id="changeToPink" ondblclick="changeToPink">Double-click to make the page pink.</button>
+        <button type="button" id="changeToBrown" onkeypress="changeToBrown">Click and hold to make the page brown.</button>
+        <a id="hoverLink" onmouseover="changeToYellow" onmouseout="changeToWhite" href="#">Hover over to make the page yellow.</a>
+
+        <script> 
+            document.querySelector("#changeToBlue").onclick = function changeToBlue(){
+                document.body.style.background = "blue";
+            }
+
+            document.querySelector("#changeToPink").ondblclick = function changeToPink(){
+                document.body.style.background = "pink";
+            }
+
+            document.querySelector("#changeToBrown").onkeypress = function changeToBrown(){
+                document.body.style.background = "brown";
+            }
+            
+            document.querySelector("#hoverLink").onmouseover = function changeToYellow(){
+                document.body.style.background = "yellow";
+            };
+            
+            document.querySelector("#hoverLink").onmouseout = function changeToWhite(){
+                document.body.style.background = "white";
+            };
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="myBtn" onclick="pressed()" onmouseover="mouseOnMe()" onmouseout="mouseOut()">Live Button!</button>
+
+        <p id="pressed"></p>
+        <p id="mouseonme"></p>
+        <p id="mouseout"></p>
+
+        <script>
+
+            function pressed(){
+                document.querySelector("#pressed").innerHTML = "I was pressed!";
+            }
+
+            function mouseOnMe(){
+              document.querySelector("#mouseonme").innerHTML = "Mouse on me!";
+            }
+
+            function mouseOut(){
+                document.querySelector("#mouseout").innerHTML = "Mouse is not on me!";
+            }
+
+        </script>
+    </body>
+</html>

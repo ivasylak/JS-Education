@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select id="selectList">
+            <option value="Peter">Peter</option>
+            <option value="John">John</option>
+            <option value="Alice">Alice</option>
+            <option value="Alex">Alex</option>
+            <option value="Iren">Iren</option>
+        </select>
+        <button onclick="remove()">Click and remove</button>
+
+        <script>
+            function remove() {  
+            let deletedItem = document.querySelector("#selectList");  
+            deletedItem.remove(deletedItem.selectedIndex);  
+         }  
+        </script>
+    </body>
+</html>

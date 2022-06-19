@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+
+    </head>
+    <body>
+        <button onclick="openWin()">Create</button>
+        <button id="btn-resize">Resize</button>
+        <button id="btn-move">Move</button>
+        <button id="btn-close">Close</button>
+
+        
+        <script>
+        let newWindow;
+
+        function openWin(){
+            newWindow = window.open("", "", "width=100, height=100");
+        }
+
+        const buttonResize = document.querySelector("#btn-resize");
+        const buttonMove = document.querySelector("#btn-move");
+        const buttonClose = document.querySelector("#btn-close");
+
+        buttonResize.addEventListener("click", function(){
+            setTimeout(function (){
+                newWindow.resizeTo(500, 500)
+            }, 2000) 
+        });
+
+        buttonMove.addEventListener("click", function(){
+            setTimeout(function (){
+                newWindow.moveTo(200, 200)
+            }, 2000) 
+        });
+
+        buttonClose.addEventListener("click", function(){
+            setTimeout(function (){
+                newWindow.close()
+            }, 2000) 
+        });
+
+        </script>
+    </body>
+</html>
