@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+            let email = "Qmail2@gmail.com";
+
+           function checkEmail(email){
+                const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (regex.test(email)) {
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+
+         console.log(checkEmail(email));
+        </script>
+    </body>
+</html>
