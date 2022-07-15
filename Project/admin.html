@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YourStore</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="icon-wrapper">
+                  <img id="icon-logo" src="images/icon-logo.jpg">
+                  <a href="index.html">
+                    <p id="name">YourStore</p>
+                  </a>
+                </div>
+              
+                <a href="cart.html">
+                  <div class="cart">
+                    <i class="bi bi-basket3"></i>
+                    <div id="cartAmount" class="cartAmount">0</div>
+                  </div>
+                </a>
+    
+            </div>
+        </header>
+
+        <div class="container flex">
+          <div class="structure">
+        
+            <table id="table">
+              <thead>
+                <tr>
+                  <th>Product name</th>
+                  <th>Unit price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="all_products">
+                <tr>
+                  <td>This is a product name</td>
+                  <td>1.80</td>
+                  <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="2" contenteditable></td>
+                  <td>3.60</td>
+                  <td class="remove"><button type="button">Remove</button></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><input type="text" id="name_product" placeholder="Name of the product" contenteditable></td>
+                  <td><input  type="number" step="0.01" id="price_product" value="0.50" contenteditable></td>
+                  <td></td>
+                  <td></td>
+                  <td><button type="button" id="add_button">Add product</button></td>
+                </tr>
+              </tfoot>
+            </table>
+            <h4>Total : <span id="total_display">0 dollars</span></h4>
+          </div>
+        </div>
+
+    </div>
+    
+    <script src="src/data.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/admin.js"></script>
+  </body>
+
+</html>
+
